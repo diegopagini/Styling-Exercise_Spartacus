@@ -108,12 +108,7 @@ html {
   scroll-behavior: smooth;
 }
 
-//Animando todo a la vez
-p,
-div {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
+//Animando todo (muy molesto)
 
 @keyframes slidein {
   from {
@@ -127,20 +122,6 @@ div {
   }
 }
 
-img,
-nav,
-a {
-  animation-duration: 3s;
-  animation-name: fadein;
-}
-
-.fadeIn {
-  animation-name: fadeIn;
-
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -149,4 +130,25 @@ a {
   to {
     opacity: 1;
   }
+}
+
+img,
+nav,
+a {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+section:hover,
+nav:hover,
+h1:hover,
+header:hover,
+main:hover,
+ul:hover,
+li:hover,
+div:hover,
+footer:hover,
+span:hover {
+  animation-duration: 1s;
+  animation-name: fadein;
 }
